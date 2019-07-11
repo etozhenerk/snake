@@ -84,12 +84,7 @@ let steps = false;
 
 let input = document.createElement('input'); // результат игры
 document.body.appendChild(input);
-input.style.cssText = `
-margin: auto;
-margin-top: 30px;
-font-size: 30px;
-display: block;
-`;
+input.classList.add('input');
 
 
 let score = 0;
@@ -144,13 +139,14 @@ function move() {
       input.value = `Ваши очки: ${score}`;
   }
   if(snakeBody[0].classList.contains('snakeBody')){
-    setTimeout( () => {
-      alert(`Игра окончена. Ваши очки: ${score}`);
-    }, 350);
-    
     clearInterval(interval);
     snakeBody[0].style.background = 'url(img/dead-head.jpg) center no-repeat';
     snakeBody[0].style.backgroundSize = 'cover';
+    if(alert(`Игра окончена. Ваши очки: ${score}`)){
+
+    }else{
+      location.reload();
+    }
   }
 
 

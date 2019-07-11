@@ -3,31 +3,86 @@
 }
 body {
   margin: 30px;
+  background: rgb(2, 0, 36);
+  background-image: -moz-linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(113, 96, 0, 0.4) 80%
+  );
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 67, 113, 0.4) 80%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 67, 113, 0.4) 80%
+  );
 }
-.field{
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #cccccc;
+.field {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: -moz-linear-gradient(
+    150deg,
+    rgb(136, 211, 206) 0%,
+    rgb(110, 69, 226) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    150deg,
+    rgb(136, 211, 206) 0%,
+    rgb(110, 69, 226) 100%
+  );
+  background-image: -ms-linear-gradient(
+    150deg,
+    rgb(136, 211, 206) 0%,
+    rgb(110, 69, 226) 100%
+  );
+  border-radius: 10px;
 }
-.excel{
-    width: 50px;
-    height: 50px;
-    padding: 5px;
+.excel {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
 }
-.snakeBody{
-    background: url(../img/snake-body.jpg);
-    background-size: cover;
-    border-radius: 40%;
+.snakeBody {
+  background: url(../img/snake-body.jpg);
+  background-size: cover;
+  border-radius: 40%;
 }
-.head{
-    background: url(../img/head.jpg);
-    background-size: cover;
-    border-radius: 20%;
+.head {
+  background: url(../img/head.jpg);
+  background-size: cover;
+  border-radius: 20%;
 }
-.mouse{
-    background: url(../img/mouse.png);
-    background-size: cover;
+.mouse {
+  background: url(../img/mouse.png);
+  background-size: cover;
+}
+.input {
+  margin: auto;
+  margin-top: 30px;
+  font-size: 30px;
+  display: block;
+  border: 2px solid blue;
+  border-radius: 7px;
+  background-image: -moz-linear-gradient(
+    150deg,
+    rgb(136, 211, 206) 0%,
+    rgb(110, 69, 226) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    150deg,
+    rgb(136, 211, 206) 0%,
+    rgb(110, 69, 226) 100%
+  );
+  background-image: -ms-linear-gradient(
+    150deg,
+    rgb(136, 211, 206) 0%,
+    rgb(110, 69, 226) 100%
+  );
+  text-align: center;
 }
